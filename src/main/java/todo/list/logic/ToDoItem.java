@@ -1,3 +1,5 @@
+package todo.list.logic;
+
 public class ToDoItem {
 	private String content;
 	private boolean resolved;
@@ -19,12 +21,7 @@ public class ToDoItem {
 		return resolved;
 	}
 
-	public void falseResolved() {
-		this.resolved = false;
+	public void setResolved(boolean value) {
+		this.resolved = value;
 	}
-
-	public void trueResolved() {
-		this.resolved = true;
-	}
-
 }

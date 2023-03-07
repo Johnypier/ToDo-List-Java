@@ -1,3 +1,5 @@
+package todo.list.logic;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,16 +17,7 @@ public class ToDoList {
 		items.remove(items.indexOf(item));
 	}
 
-	public void resolve(ToDoItem item) {
-		item.trueResolved();
-	}
-
-	public void unresolve(ToDoItem item) {
-		item.falseResolved();
-	}
-
 	public ObservableList<ToDoItem> getItems() {
 		return FXCollections.observableList(items);
 	}
-
 }
